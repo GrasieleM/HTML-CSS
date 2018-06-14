@@ -1,0 +1,83 @@
+/*Mini užduotis:  Sukurti 4 skirtingu spalvų kvadratus 120x120 ir patalpinti juos puslapio kampuose panaudojant position fixed.
+Patalpinti dar vieną kvadratą puslapio centre. 
+Kvadratai puslapio kampuose turi atsirasti tik tada, kai ant centrinio kvadrato užvedama pelė.*/
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.kvadratas1 
+{
+background: hotpink;
+position: fixed;
+width: 120px;
+height: 120px;
+left: 0px;
+top: 0px;
+
+}
+div.kvadratas2
+{
+background: pink; 
+position: fixed;
+width: 120px;
+height: 120px;
+right: 0px;
+top: 0px;
+}
+
+div.kvadratas3 
+{
+background: blue;
+position: fixed;
+width: 120px;
+height: 120px;
+left: 0px;
+bottom: 0px;
+}
+
+div.kvadratas4
+{
+background: lightblue;
+position: fixed;
+width: 120px;
+height: 120px;
+right: 0px;
+bottom: 0px;
+}
+
+div.pagrindinis 
+{
+background: black;
+position: fixed;
+width: 120px;
+height: 120px;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+div.pradzia
+{
+display: none;
+}
+
+div.pagrindinis:hover ~ div.pradzia 
+{
+    display: block;
+}
+
+</style>
+</head>
+<body>
+<div class="pagrindinis"></div>
+<div class="pradzia">
+<div class="kvadratas1"></div>
+<div class="kvadratas2"></div>
+<div class="kvadratas3"></div>
+<div class="kvadratas4"></div>
+<div>
+
+</body>
+</html>
+
