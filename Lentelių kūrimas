@@ -1,0 +1,61 @@
+/* Parašyk kodą lentelei (3X4), kurios pirmame stulpelyje yra kita lentelė (2x2). 
+Toje vidinėje lentelėje yra skaičiais numeruotas sąrašas.*/
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table 
+{
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th 
+{
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+</style>
+</head>
+
+<body>
+<table>
+<tr>
+<th>Gėrimai</th>
+<th>Patiekalas</th>
+<th>Kaina</th>
+</tr>
+<tr>
+<th rowspan="3" ><table>
+<tr>
+<td>Šalti</td>
+<td>Kašti</td>
+</tr>
+<tr>
+<td>Sultis</td>
+<td><ol>
+<li>Kava</li>
+<li>Arbata</li>
+<li>Vynas</li>
+</ol> 
+</td>
+</tr>
+</table>
+</th>
+<td>Šaltibarščiai</td>
+<td>1,50</td>
+</tr>
+<tr>
+<td>Užkepėlė</td>
+<td>3,50</td>
+</tr>
+<tr>
+<td>Desertas</td>
+<td>2,50</td>
+</tr>
+</table>
+
+</body>
+</html>
